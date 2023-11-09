@@ -55,25 +55,69 @@
 // ========================================================================
 //Question 2
 //With recursion!!
-let repeaterBeater = [1, 2, 3, "Erik!", 1, 2, 4, "Erik!"];
 
-function removeDuplicates(arr) {
-  if (arr.length === 0) {  // base case - array is empty
-    return [];
+// let repeaterBeater = [1, 2, 3, "Erik!", 1, 2, 4, "Erik!"];
+
+// function removeDuplicates(arr) {
+//   if (arr.length === 0) {  // base case - array is empty
+//     return [];
+//   }
+
+//   let first = arr[0];
+//   let rest = arr.slice(1);
+
+//   // recursive call to remove duplicates from rest of array
+//   let newArray = removeDuplicates(rest);
+
+//   if (!newArray.includes(first)) {
+//     newArray.push(first);
+//   }
+
+//   return newArray;
+// }
+
+// let newArray = removeDuplicates(repeaterBeater);
+// console.log(newArray);
+
+// ========================================================================
+//Question 3
+// no recursion
+
+// let userInput = "aaabccdddda";
+// let output = "";
+// let count = 1;
+
+// for (let i = 0; i < userInput.length; i++) {
+//   let currentChar = userInput[i];
+//   let nextChar = userInput[i + 1];
+
+//   if (currentChar === nextChar) {
+//     count++;
+//   } else {
+//     if (count > 1) {
+//       output += count + currentChar;
+//     } else {
+//       output += currentChar;
+//     }
+//     count = 1;
+//   }
+// }
+
+// console.log(output); 
+
+// ========================================================================
+//Question3
+//Recursion!!
+
+let string = "aaabccdddda";
+
+function compressor(input){
+  if (input.length === 0){ //base case, incase we get empty input
+    return ""
   }
 
-  let first = arr[0];
-  let rest = arr.slice(1);
+  let first = input[i];
+  let next = input[i + 1];
 
-  // recursive call to remove duplicates from rest of array
-  let newArray = removeDuplicates(rest);
-
-  if (!newArray.includes(first)) {
-    newArray.push(first);
-  }
-
-  return newArray;
 }
-
-let newArray = removeDuplicates(repeaterBeater);
-console.log(newArray);
+let output = compressor(string)
