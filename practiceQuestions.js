@@ -79,35 +79,35 @@
 // let newArray = removeDuplicates(repeaterBeater);
 // console.log(newArray);
 
-// ========================================================================
-//Question 3
-// no recursion
+========================================================================
+Question 3
+no recursion
 
-// let userInput = "aaabccdddda";
-// let output = "";
-// let count = 1;
+let userInput = "aaabccdddda";
+let output = "";
+let count = 1;
 
-// for (let i = 0; i < userInput.length; i++) {
-//   let currentChar = userInput[i];
-//   let nextChar = userInput[i + 1];
+for (let i = 0; i < userInput.length; i++) {
+  let currentChar = userInput[i];
+  let nextChar = userInput[i + 1];
 
-//   if (currentChar === nextChar) {
-//     count++;
-//   } else {
-//     if (count > 1) {
-//       output += count + currentChar;
-//     } else {
-//       output += currentChar;
-//     }
-//     count = 1;
-//   }
-// }
+  if (currentChar === nextChar) {
+    count++;
+  } else {
+    if (count > 1) {
+      output += count + currentChar;
+    } else {
+      output += currentChar;
+    }
+    count = 1;
+  }
+}
 
-// console.log(output); 
+console.log(output); 
 
-// ========================================================================
-//Question3
-//Recursion!!
+========================================================================
+Question3
+Recursion!!
 
 let string = "aaabccdddda";
 
