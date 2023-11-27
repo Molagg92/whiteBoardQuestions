@@ -79,45 +79,61 @@
 // let newArray = removeDuplicates(repeaterBeater);
 // console.log(newArray);
 
-========================================================================
-Question 3
-no recursion
+// ========================================================================
+// Question 3
+// no recursion
 
-let userInput = "aaabccdddda";
-let output = "";
-let count = 1;
+// let userInput = "aaabccdddda";
+// let output = "";
+// let count = 1;
 
-for (let i = 0; i < userInput.length; i++) {
-  let currentChar = userInput[i];
-  let nextChar = userInput[i + 1];
+// for (let i = 0; i < userInput.length; i++) {
+//   let currentChar = userInput[i];
+//   let nextChar = userInput[i + 1];
 
-  if (currentChar === nextChar) {
-    count++;
+//   if (currentChar === nextChar) {
+//     count++;
+//   } else {
+//     if (count > 1) {
+//       output += count + currentChar;
+//     } else {
+//       output += currentChar;
+//     }
+//     count = 1;
+//   }
+// }
+
+// console.log(output); 
+
+// ========================================================================
+// Question3
+// Recursion!!
+
+// let string = "aaabccdddda";
+
+// function compressor(input){
+//   if (input.length === 0){ //base case, incase we get empty input
+//     return ""
+//   }
+
+//   let first = input[i];
+//   let next = input[i + 1];
+
+// }
+// let output = compressor(string)
+
+//========================================================================
+// Question 4
+// no recursion
+
+function hasUniqueElements(str){
+  let uniqueChars = {};
+
+  for (let i = 0; i < str.length; i++){
+  if(){
+
   } else {
-    if (count > 1) {
-      output += count + currentChar;
-    } else {
-      output += currentChar;
+
     }
-    count = 1;
   }
 }
-
-console.log(output); 
-
-========================================================================
-Question3
-Recursion!!
-
-let string = "aaabccdddda";
-
-function compressor(input){
-  if (input.length === 0){ //base case, incase we get empty input
-    return ""
-  }
-
-  let first = input[i];
-  let next = input[i + 1];
-
-}
-let output = compressor(string)
