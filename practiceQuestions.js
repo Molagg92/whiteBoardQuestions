@@ -129,11 +129,14 @@
 function hasUniqueElements(str){
   let uniqueChars = {};
 
-  for (let i = 0; i < str.length; i++){
-  if(){
-
-  } else {
-
+  for (let i = 0; i < str.length; i++) {
+    let char = str.charAt(i);
+    
+    if (uniqueChars[char]) {
+      return false;
+    } else {
+      uniqueChars[char] = true;
     }
   }
+  return true;
 }
