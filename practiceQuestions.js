@@ -182,3 +182,25 @@
 // Output: [2, 7, 9, 12]
 
 //```
+
+
+
+// function bubbleSort(array) {
+//   var len = array.length;
+//   for (var i = 0; i < len - 1; i++) {
+//     for (var j = 0; j < len - 1; j++) {
+//       if (array[j] > array[j + 1]) {
+//         // Swap elements
+//         var temp = array[j];
+//         array[j] = array[j + 1];
+//         array[j + 1] = temp;
+//       }
+//     }
+//   }
+  
+//   return array;
+// }
+// var input = [4, 3, 2, 1];
+// console.log(bubbleSort(input)); 
+
+//output should be [1, 2, 3, 4]
