@@ -126,17 +126,37 @@
 // Question 4
 // no recursion
 
-function hasUniqueElements(str){
-  let uniqueChars = {};
+// function hasUniqueElements(str){
+//   let uniqueChars = {};
 
-  for (let i = 0; i < str.length; i++) {
-    let char = str.charAt(i);
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str.charAt(i);
     
-    if (uniqueChars[char]) {
-      return false;
-    } else {
-      uniqueChars[char] = true;
-    }
-  }
-  return true;
-}
+//     if (uniqueChars[char]) {
+//       return false;
+//     } else {
+//       uniqueChars[char] = true;
+//     }
+//   }
+//   return true;
+// }
+//========================================================================
+// Question 4
+// recursion!!
+
+// function hasUniqueElements(str) {
+
+//   if (str.length <= 1) {
+//     return true;
+//   }
+
+ 
+//   var firstChar = str.charAt(0);
+//   var remainingStr = str.slice(1);
+//   if (remainingStr.includes(firstChar)) {
+//     return false;
+//   }
+
+
+//   return hasUniqueElements(remainingStr);
+// }
